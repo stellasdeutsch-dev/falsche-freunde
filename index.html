@@ -418,7 +418,7 @@ html.no-gs .tl.m{background:var(--navy);color:#fff}
 .cta{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:18px;background:var(--navy);color:#fff;text-decoration:none;border-radius:99px;padding:17px 22px;font-weight:900;font-size:18px;text-transform:lowercase;box-shadow:0 10px 24px -12px rgba(43,50,112,.8)}
 .pr .cta{font-size:16px;padding:14px 18px}
 .pr.best .cta{background:#fff;color:var(--navy)}
-.cta.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy);box-shadow:none}
+.cta.wa{background:#25D366;color:#fff;box-shadow:0 10px 24px -12px rgba(37,211,102,.8)}.or{display:flex;align-items:center;gap:10px;margin:14px 0 0;font-size:13px;font-weight:800;color:var(--mute);text-transform:lowercase}.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}.dock a.wa{background:#25D366;color:#fff;padding:12px;display:grid;place-items:center}.cta.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy);box-shadow:none}
 .fine{font-size:14px;color:var(--mute);text-align:center;margin-top:12px}
 .trust{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
 .trust span{display:inline-flex;gap:6px;align-items:center;font-size:13px;font-weight:800;color:var(--navy);background:var(--paper);border-radius:99px;padding:6px 12px;text-transform:lowercase}
@@ -512,6 +512,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
 <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
 <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
 
 </svg>
 <main>
@@ -771,7 +772,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
     <div class="ad-sub"><b>4</b><span>как начать</span></div>
     <div class="steps" id="steps">
       <div class="rail"><b id="rail"></b></div>
-      <div class="st"><span class="k"><svg class="ic"><use href="#i-credit-card"/></svg></span><h5>оплачиваете один раз</h5><p>На lava.top. Без подписки и ежемесячных списаний.</p></div>
+      <div class="st"><span class="k"><svg class="ic"><use href="#i-credit-card"/></svg></span><h5>оплачиваете один раз</h5><p>На lava.top картой или через WhatsApp, если так удобнее. Без подписки и ежемесячных списаний.</p><div class="tags"><span>lava.top</span><span>whatsapp</span></div></div>
       <div class="st"><span class="k"><svg class="ic"><use href="#i-key-round"/></svg></span><h5>сразу получаете доступ</h5><p>Платформа сделана в Notion. Открывается по ссылке.</p></div>
       <div class="st"><span class="k"><svg class="ic"><use href="#i-smartphone"/></svg></span><h5>учитесь где удобно</h5><p>Телефон или ноутбук. В приложении Notion работает даже без интернета.</p><div class="tags"><span>в метро</span><span>в обед</span><span>перед сном</span></div></div>
       <div class="st"><span class="k"><svg class="ic"><use href="#i-rocket"/></svg></span><h5>идёте по порядку</h5><p>Тема, видео, упражнение, разбор ответов. Следующая тема. Трекер показывает, сколько уже прошли.</p></div>
@@ -845,14 +846,16 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
       </div>
     </div>
     <div class="trust"><span><svg class="ic"><use href="#i-infinity"/></svg> навсегда</span><span><svg class="ic"><use href="#i-clock"/></svg> доступ сразу</span><span><svg class="ic"><use href="#i-wifi-off"/></svg> офлайн</span></div>
-    <p class="fine">Оплата на lava.top. После новых функций цену планируем поднять. Для купивших обновления бесплатны.</p>
+    <div class="or">или</div><a class="cta wa" href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener"><svg class="ic"><use href="#i-message-circle"/></svg> купить через whatsapp</a>
+    <p class="fine">Оплата на lava.top или через WhatsApp: напишите, и вам помогут с покупкой. После новых функций цену планируем поднять. Для купивших обновления бесплатны.</p>
 
     <!-- faq -->
     <div class="ad-sub"><b>8</b><span>частые вопросы</span></div>
     <div class="faq">
       <details><summary>Это курс с преподавателем?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Нет. Это платформа для самостоятельной учёбы. Объяснения, видео, упражнения и разбор ответов уже внутри. Учитесь в своём темпе.</p></details>
       <details><summary>Я совсем с нуля. Подойдёт?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Да. Платформа A0–A2 начинается с алфавита и правил чтения.</p></details>
-      <details><summary>Как я получу доступ?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Оплачиваете на lava.top, доступ приходит сразу. Платформа открывается в Notion.</p></details>
+      <details><summary>Как я получу доступ?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Оплачиваете на lava.top, доступ приходит сразу. Или пишете в <a href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener">WhatsApp</a> и покупаете там. Платформа открывается в Notion.</p></details>
+      <details><summary>Можно купить через WhatsApp?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Да. Напишите нам в <a href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener">WhatsApp</a>, подскажем уровень и поможем оплатить.</p></details>
       <details><summary>Нужно платить за Notion?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Нет. Приложение Notion бесплатное, на телефон и на ноутбук.</p></details>
       <details><summary>Работает без интернета?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Да, в приложении Notion платформу можно открыть офлайн.</p></details>
       <details><summary>Доступ на сколько?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Навсегда. Один платёж. Все будущие обновления для вас бесплатны.</p></details>
@@ -864,11 +867,12 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
       <h2 class="h2 split">выбирайте нормальных друзей</h2>
       <p>Ложные друзья подставляют. Платформа помогает. 340+ гайдов, 7500+ слов, A0 → C1.</p>
       <a class="cta" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">забрать за 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      <a class="cta wa" style="max-width:360px;margin:10px auto 0" href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener"><svg class="ic"><use href="#i-message-circle"/></svg> или через whatsapp</a>
       <div class="trust"><span>один платёж</span><span>навсегда</span><span>доступ сразу</span></div>
     </div>
   </div>
 </section>
-<div class="dock" id="dock"><p>платформа stellas a0–c1<small>30 € вместо 40 · навсегда</small></p><a href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">забрать</a></div>
+<div class="dock" id="dock"><p>платформа stellas a0–c1<small>30 € вместо 40 · навсегда</small></p><a href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">забрать</a><a class="wa" href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener" aria-label="Купить через WhatsApp"><svg class="ic" style="font-size:20px"><use href="#i-message-circle"/></svg></a></div>
 
 
 <footer>stellas deutsch · falsche freunde</footer>
